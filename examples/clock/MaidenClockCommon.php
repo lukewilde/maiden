@@ -20,6 +20,7 @@ class MaidenClockCommon extends \Maiden\MaidenDefault {
 			"DataPath" => $environment->dataPath,
 			"IpAddress" => $environment->ipAddress,
 			"SiteDomain" => $environment->domain,
+			"DebugMode" => $environment->debugMode,
 			"EmailDeveloper" => $environment->email->developer,
 			"EmailSupport" => $environment->email->support,
 			"DatabaseHost" => $environment->database->host,
@@ -28,7 +29,6 @@ class MaidenClockCommon extends \Maiden\MaidenDefault {
 			"DatabaseUser" => $environment->database->user,
 			"DatabasePassword" => $environment->database->password,
 			"MemcacheServer" => $environment->memcache->host,
-			"DebugMode" => isset($environment->debugMode) ? "true" : "false",
 			"IncludeServerAlias" => isset($environment->includeServerAlias) ? $environment->includeServerAlias : ""
 		);
 	}
